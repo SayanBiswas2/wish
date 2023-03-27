@@ -11,10 +11,12 @@
 </head>
 
 <body>
+  <!--div id="confetti-canvas"></div-->
  <h2>Click this card</h2>
 <div class="body">
  <div class="birthdayCard">
-<div class="cardFront"><h3 class="happy">HAPPY BIRTHDAY!</h3>
+<div class="cardFront">
+  <h3 class="happy">MY LOVE,LOVE YOU FOREVER!</h3>
 <div class="balloons">
   <div class="balloonOne"></div>
   <div class="balloonTwo"></div>
@@ -23,13 +25,25 @@
 </div>
 </div>
 <div class="cardInside">
-    <h3 class="back">HAPPY BIRTHDAY!</h3>
-    <p>Dear best friend,</p> 
-    <p>Happy birthday!! I hope your day is filled with lots of love and laughter! May all of your birthday wishes come true.</p>
-    <p class="name">Praween</p>
+    <h3 class="back">MY LOVE,LOVE YOU FOREVER!</h3>
+    <p>My love, you are my world. Your presence brings joy and comfort to my life. I cherish every moment with you.</p>
+    <p class="sender">Anish</p>
   </div>
 </div>
+<audio id="song" controls autoplay hidden="true">
+  <!--source src="horse.ogg" type="audio/ogg"-->
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 </div
   <script src="main.js"></script>
+<script src="./confetti.js"></script>
+  <script>
+  var x = document.getElementById("song");
+  x.volume= 0.5;
+  x.play()
+  /*startConfetti()*/
+</script>
+  
 </body>
 </html>

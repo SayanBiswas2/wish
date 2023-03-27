@@ -41,10 +41,14 @@ h2 {
   font-family: Tahoma, sans-serif;
   text-align: center;
   margin:30px; 
+  margin-bottom:5px;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   transition: .1s;
 }
-  
+.name{
+  font-family: cursive;
+  font-size: 2rem;
+}
   .balloons {
   position: absolute;
 }
@@ -133,7 +137,7 @@ p {
   color: #333;
 }
 
-.name {
+.sender {
   position: absolute;
   left:150px;
   top:200px;
@@ -187,4 +191,14 @@ p {
  100% {
   color: blue;
  }
+}
+
+
+.confetti-canvas{
+  /*position: relative;*/
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  z-index: 100;
 }
